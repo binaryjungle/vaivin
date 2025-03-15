@@ -16,9 +16,9 @@ GOTO C:\apache\conf\httpd.conf
 Define SRVROOT "c:/apache"
 ServerName localhost:80
 #DocumentRoot "${SRVROOT}/htdocs"
-DocumentRoot  "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin"
+DocumentRoot  "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin/"
 #<Directory "${SRVROOT}/htdocs">
-<Directory "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin">
+<Directory "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin/">
 
 LoadModule php_module "C:/php/php8apache2_4.dll"
 AddHandler application/x-httpd-php .php
