@@ -1,0 +1,66 @@
+Download sqlite from SQLite donwload
+Download sqlite_tools from SQLite donwload
+Place in c:sqlite
+
+DONWLOAD and UNZIP
+
+Download Apache from apachelounge.com
+Place in C:\apache
+Download Php Thread from PHP page
+Place in c:\php
+
+APACHE CONF
+
+GOTO C:\apache\conf\httpd.conf
+
+Define SRVROOT "c:/apache"
+ServerName localhost:80
+#DocumentRoot "${SRVROOT}/htdocs"
+DocumentRoot  "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin"
+#<Directory "${SRVROOT}/htdocs">
+<Directory "D:/HOME/ACTIONABLE/GitControlledPrograms/vaivin">
+
+LoadModule php_module "C:/php/php8apache2_4.dll"
+AddHandler application/x-httpd-php .php
+PHPIniDir "C:/php"
+
+PHP CONF:
+
+GOTO C:\php
+
+Copy php.ini-development
+Paste in same location
+Rename php.ini-development to php.ini
+
+create home.php in DESKTOP\HARI\snm
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SNM HOME Page</title>
+</head>
+<body>
+    <?php
+    //echo "Hello World";
+    echo "Welcome to Senthil Nagai Maalikai";
+    ?>
+</body>
+</html>
+
+**** END ****
+
+Run Apache
+
+go to WIN+R
+type cmd
+cd c:/
+cd apache\bin
+httpd.exe
+
+IF REQUIRED
+STOP IIS
+net stop WAS
+
+http://localhost/home.php
+
+https://www.w3schools.com/html/html_intro.asp
