@@ -1,4 +1,4 @@
-<?php require_once('intialize.php'); ?>
+<?php require_once('../intialize.php'); ?>
 <html>
 <head>
 <title>Expenses</title>
