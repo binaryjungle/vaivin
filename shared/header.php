@@ -2,7 +2,7 @@
 
   <head>
     <title><?php echo $page_title?></title>
-    <link rel="stylesheet" media="all" href="stylesheets/public.css">
+    <!--<link rel="stylesheet" media="all" href="stylesheets/public.css">-->
   </head>
 
   <body>
@@ -18,14 +18,14 @@
 
         <div class="dropdown_content">
           <a href="finance/expenses.php">Expenses</a>
-          <a href="#">Liability</a>
-          <a href="#">Description</a>
-          <a href="#">Party</a>
+          <a href="finance/liability.php">Liability</a>
+          <a href="finance/description.php">Description</a>
+          <a href="finance/party.php">Party</a>
         </div>
       </div>
 
-      <a href="index.php">Education</a>
-      <a href="index.php">Documents</a>
-      <a href="index.php">Memories</a>
-      <a href="index.php">Contact</a>
+      <a href="education.php">Education</a>
+      <a href="documents.php">Documents</a>
+      <a href="memories.php">Memories</a>
+      <a href="contact.php">Contact</a>
     </div>
